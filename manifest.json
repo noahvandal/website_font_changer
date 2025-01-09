@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Font and Color Changer",
+    "version": "1.0",
+    "description": "Change webpage fonts and colors",
+    "permissions": ["activeTab", "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }

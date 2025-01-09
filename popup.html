@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .control-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="control-group">
+    <label for="fontFamily">Font:</label>
+    <select id="fontFamily">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Helvetica">Helvetica</option>
+    </select>
+  </div>
+  
+  <div class="control-group">
+    <label for="textColor">Text Color:</label>
+    <input type="color" id="textColor">
+  </div>
+  
+  <div class="control-group">
+    <label for="backgroundColor">Background Color:</label>
+    <input type="color" id="backgroundColor">
+  </div>
+  
+  <button id="apply">Apply Changes</button>
+  <button id="reset">Reset</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
